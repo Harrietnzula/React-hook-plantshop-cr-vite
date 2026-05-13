@@ -1,5 +1,5 @@
-import React from "react";
 
+import React from "react";
 function Search({ searchTerm, onSearchChange }) {
   return (
     <div className="searchbar">
@@ -9,8 +9,9 @@ function Search({ searchTerm, onSearchChange }) {
         id="search"
         placeholder="Type a name to search..."
         value={searchTerm}
-        onChange={(e) => onSearchChange(e.target.value)} // Update state in PlantPage
+        onChange={(e) => onSearchChange(e.target.value)}
       />
     </div>
   );
 }
+export default Search;
