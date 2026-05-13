@@ -7,7 +7,7 @@ function NewPlantForm({ onAddPlant }) {
   
 function handleSubmit(e) {
   e.preventDefault();
- const newPlant = { name, image, price: Number(price) };
+const newPlant = { name, image, price };
   
   fetch("http://localhost:6001/plants", {
     method: "POST",
