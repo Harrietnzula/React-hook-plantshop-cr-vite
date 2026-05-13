@@ -3,10 +3,10 @@ import NewPlantForm from "./NewPlantForm";
 import PlantList from "./PlantList";
 import Search from "./Search";
 
-import React, { useState, useEffect } from "react";
-
 function PlantPage() {
   const [plants, setPlants] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
+git status
   const displayedPlants = plants.filter((plant) => {
   return plant.name.toLowerCase().includes(searchTerm.toLowerCase());
 });
